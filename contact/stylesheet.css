@@ -22,14 +22,14 @@ header {
   font-size: 1.5em;
 }
 
-.menu a:nth-child(1) {
+nav a:nth-child(1) {
   background-color: #fc6c85;
   color: #fff;
   padding: 10px 55px;
   border-radius: 0px;
 }
 
-.menu a:nth-child(2) {
+nav a:nth-child(2) {
   background-color: green;
   color: #fff;
   padding: 10px 55px;
@@ -65,104 +65,84 @@ main {
   margin: 0 auto;
 }
 
-.section01{
-  display: flex;
-  max-width: 1200px;
-  margin: 40px auto;
-  justify-content: space-between;
-}
-
-.sec01_text{
-  display: block;
-  margin: auto 0;
-}
-
-
-.section01 img{
-  max-width: 100%;
-  height: auto;
-  align-items: flex-end;
-}
-
-.sec02_wrapper{
-  display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
-}
-
-
-.sec02_right{
-  width: 50%;
-}
-.sec02_left{
-  width: 50%;
-}
-
-.sec02_right img{
+.contact-form-section {
   width: 100%;
-  padding-left: 20px;
-}
-
-.sec02_left img{
-  width: 100%;
-  padding-right: 20px;
-}
-
-.sec02_left p{
-  padding-right: 20px;
-  margin-top: 20px;
-}
-
-.sec02_right p{
-  padding-left: 20px;
-  margin-top: 20px;
-}
-
-.section03{
-  display: flex;
-  background-color:  #d3d3d3;
-  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  margin:60px auto;
 }
 
-.sec03_img{
-  max-width: 33%;
-  align-items: flex-start;
+.contact-form-section h1 {
+  margin-bottom: 20px;
 }
 
-.sec03_img img{
-  width: 100%;
-}
-
-.sec03_text{
-  align-items: flex-end;
-  margin:  auto 10px;
-}
-
-.sec03_text h2,p{
-  text-align: left;
-}
-
-.section04{
-  max-width: 1200px;
-  margin:60px auto;
-}
-
-.sec04_wrapper{
+.form-group {
+  margin-bottom: 10px;
   display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: row;
 }
 
-.sec04_content h4{
-  margin:10px 0;
+.form-group label {
+  flex: 1;
+  display: block;
+  margin-bottom: 2%;
+  text-align: left;
+  max-width:20%;
+  font-weight: bold;
 }
 
-.sec04_content img{
-  width: 100%;
+.form-group label::after {
+  content: " 必須";
+  color: #fff;
+  background-color: #fc6c85; 
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-left: 5px; 
 }
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="inquiry"],
+.form-group input[type="message"],
+.form-group textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 3%;
+}
+
+
+select {
+  border: 1px solid #ccc; 
+  padding: 5px; 
+  
+}
+
+
+
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 2% 15%;
+  margin-bottom: 10%;
+  border: none;
+  
+}
+
+.submit{
+  text-align: center;
+}
+
 
 .section05{
   max-width: 1200px;
@@ -282,38 +262,7 @@ footer p{
     margin: 20px auto;
   }
 
-  .section01{
-    display: flex;
-    max-width: 768px;
-    margin: 40px auto;
-    justify-content: space-between;
-  }
-
-  .sec02_wrapper{
-    display: flex;
-    max-width: 768px;
-    justify-content: space-between;
-  }
-
-  .section03{
-    display: flex;
-    background-color:  #d3d3d3;
-    max-width: 768px;
-    padding: 20px;
-    margin:60px auto;
-  }
-
-  .section04{
-    max-width: 768px;
-    margin:60px auto;
-  }
-  
-  .sec04_wrapper{
-    display: flex;
-    max-width: 768px;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+ 
 
   .section05{
     max-width: 768px;
@@ -338,9 +287,37 @@ footer p{
     margin:20px 25px;
     font-size: 40%;
   }
-
-  .sec04_content{
-    margin:10px 10px;
+  .form-group label::after {
+    content: " 必須";
+    color: #fff;
+    background-color: #fc6c85; 
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    margin-left: 5px; 
   }
+
+  .form-group label {
+    flex: 1;
+    display: block;
+    margin-bottom: 2%;
+    text-align: left;
+    max-width:20%;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+
+
+select {
+  border: 1px solid #ccc; 
+  padding: 5px; 
+  margin-left: 2%;
+
 }
 
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+  margin-left: 2%;
+}
+}
